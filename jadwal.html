@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Data Siswa</title>
+  <style>
+    body {
+      font-family:  sans-serif;
+      background-color: #f3f6f9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .nyaw {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      padding: 8px 16px;
+      background-color: #c98f92;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .container label {
+      font-weight: bold;
+      color: #a64b7b;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="nyaw">
+    <a href="dashboardadmin.html" class="btn">Kembali ke Dashboard</a>
+    <div class="container">
+      <label for="jurusan">Pilih Hari:</label>
+      <select id="jurusan">
+        <option value="semua">Semua</option>
+        <option value="PPLG">PPLG</option>
+        <option value="AKL">AKL</option>
+        <option value="DKV">DKV</option>
+      </select>
+    </div>
+  </div>
+
+  <h2>Jadwal Kelas</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Hari</th>
+        <th>Jam</th>
+        <th>Mapel</th>
+        <th>Guru</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Senin</td>
+        <td>08.00 - 09.00</td>
+        <td>Filosofi</td>
+        <td>Pak Dafa</td>
+      </tr>
+      <tr>
+        <td>Selasa</td>
+        <td>08.00 - 09.00</td>
+        <td>Astronomi</td>
+        <td>Mr. Wahyu</td>
+      </tr>
+      <tr>
+        <td>Rabu</td>
+        <td>08.00 - 09.00</td>
+        <td>Olahraga</td>
+        <td>Jonathan S.Pd</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
